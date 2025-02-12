@@ -29,3 +29,5 @@ wallet_real.json
 wallet_test.json
 
 program/target/
+
+app/.next/
