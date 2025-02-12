@@ -62,15 +62,14 @@ The Solana program handles four main instructions:
 
 1. **NFT Creation Flow**
 ```mermaid
-mermaid
 sequenceDiagram
-Actor Artist
-Artist->>Frontend: Upload Music & Certificate
-Frontend->>Pinata: Store Files
-Pinata-->>Frontend: Return IPFS Hashes
-Frontend->>Solana: Initialize NFT
-Solana-->>Frontend: Confirm Transaction
-Frontend-->>Artist: Success Notification
+    Actor Artist
+    Artist->>Frontend: Upload Music & Certificate
+    Frontend->>Pinata: Store Files
+    Pinata-->>Frontend: Return IPFS Hashes
+    Frontend->>Solana: Initialize NFT
+    Solana-->>Frontend: Confirm Transaction
+    Frontend-->>Artist: Success Notification
 ```
 
 ## Setup Instructions
