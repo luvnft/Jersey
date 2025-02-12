@@ -61,7 +61,7 @@ The Solana program handles four main instructions:
 ## Data Flow
 
 1. **NFT Creation Flow**
-```mermiad
+```mermaid
 mermaid
 sequenceDiagram
 Actor Artist
