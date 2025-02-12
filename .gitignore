@@ -1,0 +1,31 @@
+# Rust
+/target
+**/*.rs.bk
+Cargo.lock
+
+# Node
+node_modules
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Solana
+test-ledger/
+.anchor/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build
+dist/
+build/
+
+wallet_real.json
+wallet_test.json
+
+program/target/

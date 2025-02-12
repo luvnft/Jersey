@@ -1,0 +1,21 @@
+{
+    "name": "music-nft-platform-client",
+    "version": "1.0.0",
+    "description": "Client application for Music NFT Platform",
+    "main": "index.js",
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test"
+    },
+    "dependencies": {
+        "@pinata/sdk": "^2.1.0",
+        "@project-serum/anchor": "^0.26.0",
+        "@solana/spl-token": "^0.3.9",
+        "@solana/web3.js": "^1.87.6",
+        "axios": "^1.6.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-scripts": "5.0.1"
+    }
+}
