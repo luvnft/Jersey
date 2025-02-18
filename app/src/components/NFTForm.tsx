@@ -67,7 +67,7 @@ export function NFTForm() {
         <WalletMultiButton />
       </div>
 
-      <h1 className="text-3xl font-bold mb-8">Music NFT Platform</h1>
+      <h1 className="text-3xl font-bold mb-8">LUV NFT MU$IK</h1>
 
       <div className="space-y-4">
         <div>
@@ -91,7 +91,7 @@ export function NFTForm() {
         </div>
 
         <div>
-          <label className="block mb-2">Music File</label>
+          <label className="block mb-2">MU$IK File</label>
           <input
             type="file"
             accept="audio/*"
@@ -115,7 +115,7 @@ export function NFTForm() {
           disabled={!publicKey || loading}
           className="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600 disabled:bg-gray-400"
         >
-          {loading ? 'Processing...' : 'Create Music NFT'}
+          {loading ? 'Processing...' : 'Create MU$IK'}
         </button>
       </div>
     </div>
