@@ -1,5 +1,6 @@
 import { Providers } from '@/components/providers';
 import './layout.css'; // Import your CSS file
+import Link from 'next/link'; // Import Next.js Link for better navigation
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -9,13 +10,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="main-layout">
             <header className="header">
               <div className="logo">
-                {/* Replace with your actual logo */}
-                <img src="/your-logo.svg" alt="Your Logo" className="logo-image" /> 
+                <Link href="/"> {/* Use Next.js Link for the logo */}
+                  <img src="/your-logo.svg" alt="Your Logo" className="logo-image" />
+                </Link>
               </div>
               <nav className="navigation">
-                <a href="#">Browse</a>
-                <a href="#">Radio</a>
-                <a href="#">My Music</a>
+                <Link href="/browse"> {/* Use Link for navigation */}
+                  Browse
+                </Link>
+                <Link href="/radio">
+                  Radio
+                </Link>
+                <Link href="/my-music">
+                  My Music
+                </Link>
                 {/* Add more navigation links as needed */}
               </nav>
               <div className="user-profile">
@@ -25,11 +33,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </header>
 
             <main className="main-content">
-              {children}  {/* This is where your Dapp's content goes */}
+              {children}
             </main>
 
             <footer className="footer">
-              <p>&copy; 2024 Your Dapp Name. All rights reserved.</p>
+              <p>&copy; 2025 LUV NFT MU$IK. All rights reserved.</p>
               {/* Add any other footer links or information */}
             </footer>
           </div>
@@ -38,67 +46,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-
-
-// layout.css
-.main-layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensure full viewport height */
-  font-family: sans-serif; /* Use a clean, modern font */
-  background-color: #111; /* Dark background */
-  color: #fff; /* Light text */
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border-bottom: 1px solid #333; /* Subtle separator */
-}
-
-.logo {
-  /* Style your logo container as needed */
-}
-
-.logo-image {
-  max-height: 40px; /* Adjust the height to fit your logo */
-}
-
-.navigation {
-  display: flex;
-  gap: 20px;
-}
-
-.navigation a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.user-profile {
-  display: flex;
-  align-items: center;
-}
-
-.connect-button {
-  background-color: #007bff; /* Example blue color */
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.main-content {
-  flex: 1; /* Allow main content to take up available space */
-  padding: 20px;
-}
-
-.footer {
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid #333;
-}
-
-/* Add more styles as needed to match the specific look you want */
